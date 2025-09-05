@@ -21,9 +21,9 @@ const MenuItems = () => {
 return (
 <>
 {NAV_ITEMS.map((navItem, index) => (
-<Menu.Item key={index}>
-<a href={navItem.href ?? '#'}>{navItem.label}</a>
-</Menu.Item>
+  <Menu.Item key={index}>
+    <a href={navItem.href ?? '#'}>{navItem.label}</a>
+  </Menu.Item>
 ))}
 </>
 );
@@ -35,12 +35,12 @@ interface NavItem {
 }
 const NAV_ITEMS: Array<NavItem> = [
   {
-  label: 'Catalog',
-  href: '/',
+    label: 'Catalog',
+    href: '/',
   },
   {
-  label: 'Checkout',
-  href: '/checkout',
+    label: 'Checkout',
+    href: '/checkout',
   },
 ];
 export default Header;
