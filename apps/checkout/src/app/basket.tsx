@@ -24,7 +24,8 @@ return (
                         </Table.Cell>
                         <Table.Cell> {basketItem.title}</Table.Cell>
                         <Table.Cell>{basketItem.quantity || 0}</Table.Cell>
-                        <Table.Cell>R {basketItem.price * basketItem.quantity || 0}</Table.Cell>
+                        {/* make the decimals only show 2 digits */}
+                        <Table.Cell>R {(basketItem.price * basketItem.quantity).toFixed(2) || 0}</Table.Cell>
                     </Table.Row>
                 ))}
             </Table.Body>
