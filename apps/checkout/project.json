@@ -54,8 +54,7 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "checkout:build:development",
-          "baseHref": "/checkout/"
+          "buildTarget": "checkout:build:development"
         },
         "production": {
           "buildTarget": "checkout:build:production",

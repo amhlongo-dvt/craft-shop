@@ -54,8 +54,7 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "catalog:build:development",
-          "proxyConfig": "apps/catalog/proxy.conf.json"
+          "buildTarget": "catalog:build:development"
         },
         "production": {
           "buildTarget": "catalog:build:production",
